@@ -1,5 +1,4 @@
 // Adding event listeners to the site 
-
 // Body 
 
 const body = document.querySelector('body'); 
@@ -13,6 +12,7 @@ const navLogo = document.querySelector('.logo-heading');
 // console.log(navLogo);
 navLogo.addEventListener('mouseover', function(eventObject) {
     console.log('We moused over:', eventObject.clientX);
+    TweenMax.to(navLogo, 1, {x:100});
     eventObject.stopPropagation();
 });
 
