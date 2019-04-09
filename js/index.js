@@ -69,7 +69,7 @@ letsGo.addEventListener('mouseenter', function(eventObject) {
 // Let's go! Img 
 const letsGoImg = document.querySelector('.content-section img'); 
 letsGoImg.addEventListener('mouseleave', function(eventObject) {
-    console.log("Thanks for leaving your mouse");
+    letsGoImg.style.display = 'none';
     eventObject.stopPropagation();
 });
 
@@ -84,6 +84,7 @@ adventureAwaits.addEventListener('mousemove', function(eventObject) {
 const adventureImg = document.querySelector('.inverse-content img'); 
 adventureImg.addEventListener('mouseleave', function(eventObject) {
     console.log("Thanks for leaving your mouse");
+    letsGoImg.style.display = 'none';
     eventObject.stopPropagation();
 });
 
